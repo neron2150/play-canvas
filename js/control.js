@@ -1,4 +1,7 @@
 function initControl() {
+	this.mouseX = 0;
+	this.mouseY = 0;
+	this.moveVec = {keyx: 0, keyy: 0, x: 0,y: 0}
 	document.body.onmousemove = onMouseMove.bind(this)
 	document.body.onmousedown = onMouseDown.bind(this)
 	document.body.onkeydown = onKeyDown.bind(this)
